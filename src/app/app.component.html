@@ -103,6 +103,11 @@
         <td> capitalize </td>
         <td> {{ name2 | capitalize }} </td>
       </tr>
+      <tr>
+        <td> {{ name2 }} </td>
+        <td> capitalize: false </td>
+        <td> {{ name2 | capitalize: false }} </td>
+      </tr>
     </tbody>
   </table>
 
@@ -117,4 +122,9 @@
 
   <br><br><br>
   <!--para cambiar el idioma de las fechas a español, ir al module e importar LOCALE_ID en providers[] pegar el cod => provide: LOCALE_ID, useValue: "es"-->
+
+  <h4>Youtube <small>video</small></h4>
+  <br>
+  <iframe width="560" height="315" [src]=" video | domsecure: 'https://www.youtube.com/embed/' " frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

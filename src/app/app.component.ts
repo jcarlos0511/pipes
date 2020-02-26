@@ -12,19 +12,20 @@ export class AppComponent {
   a = 0.234;
   salary = 1234.5;
   hero = {
-    name: 'Logan',
-    nickname: 'Wolverine',
+    name: "Logan",
+    nickname: "Wolverine",
     age: 500,
-    address:{
-      city: 'NY',
-      home: 'Walk street'
+    address: {
+      city: "NY",
+      home: "Walk street"
     }
   };
-  promiseValue = new Promise( (resolve , reject)=>{
-    setTimeout( ()=> resolve('Data arrive!!'),3500 );
+  promiseValue = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Data arrive!!"), 3500);
   });
   date = new Date();
 
-  name2 = 'jUan Carlos ChaRa LopeZ'
+  name2 = "jUan Carlos ChaRa LopeZ";
 
+  video = "0O_UcO5uJ8k";
 }

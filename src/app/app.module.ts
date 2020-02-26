@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { capitalizePipe } from './pipes/capitalize.pipe';
+import { DomsecurePipe } from './pipes/domsecure.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    capitalizePipe
+    capitalizePipe,
+    DomsecurePipe
   ],
   imports: [
     BrowserModule
