@@ -104,9 +104,10 @@
         <td> {{ name2 | capitalize }} </td>
       </tr>
       <tr>
-        <td> {{ name2 }} </td>
-        <td> capitalize: false </td>
-        <td> {{ name2 | capitalize: false }} </td>
+        <td> {{ name }} </td>
+        <td> password: {{ active }} <button (click)="active=!active" type="button"
+            class="btn btn-outline-primary btn-lg" >Active/Deactive</button></td>
+        <td> {{ name | password: active }} </td>
       </tr>
     </tbody>
   </table>
